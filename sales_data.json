@@ -1,0 +1,962 @@
+[
+  {
+    "id": "s96",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s95",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s94",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s93",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s92",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s91",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Berry",
+    "amount": 290,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s90",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s89",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s88",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 380,
+    "payment": "Cash + Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s87",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops, 1 Berry",
+    "amount": 477,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s86",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Berry",
+    "amount": 100,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s85",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 380,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s84",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 380,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s83",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 360,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s82",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s81",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Berry",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s80",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Berry",
+    "amount": 100,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s79",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Berry",
+    "amount": 289,
+    "payment": "Cash + Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s78",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 380,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s77",
+    "date": "2026-11-04",
+    "customer": "",
+    "product": "Preorder",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s76",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s75",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s74",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s73",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "Quantity appears unclear",
+    "synced": false
+  },
+  {
+    "id": "s72",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s71",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s70",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Cash + Online",
+    "notes": "Payment mode appears C + O",
+    "synced": false
+  },
+  {
+    "id": "s69",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s68",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s67",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s66",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mango",
+    "amount": 99,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s65",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s64",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s63",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop, 1 berry",
+    "amount": 308,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s62",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s61",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s60",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Mango",
+    "amount": 290,
+    "payment": "Cash",
+    "notes": "Amount handwriting may need confirmation",
+    "synced": false
+  },
+  {
+    "id": "s59",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Mango",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s58",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s57",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Coconut",
+    "amount": 199,
+    "payment": "Online + Cash",
+    "notes": "Payment mode handwriting appears O + C",
+    "synced": false
+  },
+  {
+    "id": "s56",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "1 Berry",
+    "amount": 99,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s55",
+    "date": "2026-11-03",
+    "customer": "",
+    "product": "Pre Order",
+    "amount": 1730,
+    "payment": "Online",
+    "notes": "Pre-order payment mode unspecified in ledger",
+    "synced": false
+  },
+  {
+    "id": "s54",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Mango",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "Amount appears to combine 189 + 99; verify",
+    "synced": false
+  },
+  {
+    "id": "s53",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "3 Mini Pops",
+    "amount": 567,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s52",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Mango",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s51",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop, Coconut quantity unclear",
+    "amount": 388,
+    "payment": "Online",
+    "notes": "Quantity unclear in photo",
+    "synced": false
+  },
+  {
+    "id": "s50",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 180,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s49",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s48",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s47",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Coconut",
+    "amount": 388,
+    "payment": "Online",
+    "notes": "Quantity unclear in photo",
+    "synced": false
+  },
+  {
+    "id": "s46",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s45",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "Unclear",
+    "amount": 580,
+    "payment": "Cash",
+    "notes": "Product and quantity unclear in photo",
+    "synced": false
+  },
+  {
+    "id": "s44",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s43",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s42",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s41",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s40",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s39",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s38",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s37",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop, 1 Coconut",
+    "amount": 390,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s36",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s35",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "2 Mini Pops, 2 Mango, 1 Coconut",
+    "amount": 676,
+    "payment": "Online",
+    "notes": "Handwritten quantity/amount may need checking",
+    "synced": false
+  },
+  {
+    "id": "s34",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "2 Mini Pops, 2 Mango",
+    "amount": 576,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s33",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 180,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s32",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 179,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s31",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 Mango",
+    "amount": 99,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s30",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s29",
+    "date": "2026-11-01",
+    "customer": "",
+    "product": "1 B. Cube",
+    "amount": 100,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s28",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s27",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s26",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "2 Mini Pops + 1 Mango",
+    "amount": 477,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s25",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s24",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s23",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop + 1 Mango",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s22",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop + 2 Mango",
+    "amount": 387,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s21",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 180,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s20",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s19",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s18",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 378,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s17",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s16",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop + 1 Mango",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s15",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mango",
+    "amount": 100,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s14",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s13",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop + 1 Berry Lollipop",
+    "amount": 288,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s12",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s11",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s10",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mango Mini Pop",
+    "amount": 288,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s9",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 189,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s8",
+    "date": "2026-10-31",
+    "customer": "",
+    "product": "1 Mini Pop",
+    "amount": 190,
+    "payment": "Cash",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s7",
+    "date": "2026-10-28",
+    "customer": "",
+    "product": "2 Mini Pops",
+    "amount": 360,
+    "payment": "Online",
+    "notes": "",
+    "synced": false
+  },
+  {
+    "id": "s6",
+    "date": "2026-10-11",
+    "customer": "Krishna",
+    "product": "Minis",
+    "amount": 179,
+    "payment": "Cash",
+    "notes": "",
+    "synced": true
+  },
+  {
+    "id": "s5",
+    "date": "2026-10-11",
+    "customer": "Aachal",
+    "product": "Minis",
+    "amount": 179,
+    "payment": "Online",
+    "notes": "",
+    "synced": true
+  },
+  {
+    "id": "s4",
+    "date": "2026-10-11",
+    "customer": "Sayansh",
+    "product": "Minis",
+    "amount": 179,
+    "payment": "Cash",
+    "notes": "",
+    "synced": true
+  },
+  {
+    "id": "s3",
+    "date": "2026-10-11",
+    "customer": "Lata",
+    "product": "Minis",
+    "amount": 179,
+    "payment": "Online",
+    "notes": "",
+    "synced": true
+  },
+  {
+    "id": "s2",
+    "date": "2026-10-11",
+    "customer": "Jhanvi",
+    "product": "Minis (3 cups)",
+    "amount": 537,
+    "payment": "Cash",
+    "notes": "Took 2 cups then 1",
+    "synced": true
+  },
+  {
+    "id": "s1",
+    "date": "2026-10-08",
+    "customer": "Aasad",
+    "product": "Minis",
+    "amount": 200,
+    "payment": "Cash",
+    "notes": "",
+    "synced": true
+  }
+]
