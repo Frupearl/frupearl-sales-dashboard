@@ -27,16 +27,22 @@ The **Fast Punch Counter** uses specific color variables defined in CSS:
 | **🫐 3. Berry** | `berry` | ₹99 | `#e11d48` (Rose Berry) | `#fff1f2` |
 | **🥭 4. Mango** | `mango` | ₹99 | `#d97706` (Amber Mango) | `#fffbeb` |
 
-### Dynamic Product & Price Customization (⚙️ Prices):
+### Dynamic Product, Price & Theme Customization (⚙️ Settings):
 * Accessible via the compact **`⚙️`** icon button in the Fast Punch Counter panel header (right next to "Reset counts").
 * Opens `#product-settings-modal` instantly with zero animation lag (hardware blur removed for 60fps performance on iPad).
+* **2-Column Grid Layout (2 in each row)**: Products in the settings modal are displayed in a clean 2-column grid side-by-side (Item 1 & 2 on row 1, Item 3 & 4 on row 2), matching the 2-column counter pad layout on iPad and desktop.
 * **Unlimited Products**: Users can click **`＋ Add New Product`** to add a 5th, 6th, or unlimited items to the Fast Punch grid.
 * **On-the-Fly Editing**: Edit both product names and ₹ prices for any slot.
 * **Remove Items**: Click **`🗑️ Remove`** next to any product to delete it from the counter pad.
-* **Automatic Flavor Theming**: Added items automatically cycle through a high-contrast pastel palette (Purple, Sky Blue, Rose Berry, Amber Mango, Emerald Green, Coral Orange, Royal Indigo, Vibrant Pink, Fresh Teal).
+* **Minimal Single-Dot Color Selector**:
+  * Clean, compact header displaying simple item labels (`🍧 ITEM 1`, `🥥 ITEM 2`) without extra theme name clutter.
+  * A single, elegant circular color selector dot sits directly beside the item title.
+  * Tapping the color dot opens the color picker to select any custom color or flavor hue on the fly.
+  * **Adaptive Color Engine**: Automatically computes the soft pastel background tint (`hexToRgba(hex, 0.08)`), crisp border, pill background, and active glow rings for any custom hex selected.
+  * **Zero-Lag Live Preview**: Changing color updates the card background, borders, and input rings instantly in 60fps without resetting inputs.
 * **Offline Persistent Storage**: Stored persistently in IndexedDB (`settings` store, key: `custom_products_catalog`) with `localStorage` fallback.
 * Immediately re-renders counter cards, stepper controls, price pills, and real-time punch total calculations.
-* Includes a **↺ Reset Defaults** option to restore standard catalog names & pricing at any time.
+* Includes a **↺ Reset Defaults** option to restore standard catalog names, pricing & colors at any time.
 
 ### Payment Mode Theming:
 * **💵 Cash**: Green highlight (`#16a34a` / `#f0fdf4`)
@@ -55,6 +61,7 @@ The **Fast Punch Counter** uses specific color variables defined in CSS:
    * **Date-Wise & Punch-Time Descending Sort**: All transactions are sorted with newest dates and latest punches first (`date descending`, then `timestamp descending`).
    * **Latest Entered Sale Always on Top**: Every new entry records high-precision millisecond `timestamp` and `createdAt`. If multiple entries occur on the same date, the most recently entered sale is guaranteed to be at position #1.
    * By default, page 1 **only shows the 3 most recent entries**.
+   * **Ultra-Compact Transaction Rows**: Replaced previous multi-line stacked layout (which took ~100px per item) with a streamlined single-tier layout (only ~44px height). Left side displays product name, payment & sync badges with date/notes underneath. Right side displays amount and compact `[Edit]` `[Delete]` action buttons side-by-side, saving over 50% vertical space on screen.
    * Shows entries count and pagination info only (no revenue/grand total displayed on counter view).
    * **Smart Compact Pagination**: Clean, single-line pagination with smart ellipsis (e.g. `[◀ Prev] 1 2 3 4 … 32 [Next ▶]`) replacing previous multi-line clutter.
 3. **The Other Page ("All Sales History & Totals")**:

@@ -329,6 +329,32 @@
       --card-shadow: rgba(13, 148, 136, 0.2);
     }
 
+    .product-card[data-theme="gold"] {
+      --card-theme: #ca8a04;
+      --card-theme-dark: #a16207;
+      --card-bg: #fefce8;
+      --card-border: #fef08a;
+      --card-pill-bg: #fef9c3;
+      --card-pill-border: #fef08a;
+      --card-btn-bg: #fef9c3;
+      --card-btn-text: #ca8a04;
+      --card-btn-hover: #fef08a;
+      --card-shadow: rgba(202, 138, 4, 0.2);
+    }
+
+    .product-card[data-theme="slate"] {
+      --card-theme: #475569;
+      --card-theme-dark: #334155;
+      --card-bg: #f8fafc;
+      --card-border: #cbd5e1;
+      --card-pill-bg: #f1f5f9;
+      --card-pill-border: #cbd5e1;
+      --card-btn-bg: #f1f5f9;
+      --card-btn-text: #475569;
+      --card-btn-hover: #cbd5e1;
+      --card-shadow: rgba(71, 85, 105, 0.2);
+    }
+
     .product-card {
       background: var(--card-bg, #fafafa);
       border: 2px solid var(--card-border, var(--border));
@@ -600,26 +626,36 @@
     .item {
       background: white;
       border: 1px solid var(--border);
-      border-radius: 13px;
-      padding: 14px;
-      margin: 9px 0;
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin: 6px 0;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.1s ease, border-color 0.1s ease;
+    }
+
+    .item:hover {
+      border-color: #cbd5e1;
+      background: #fafafa;
     }
 
     .itemtop {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px
+      align-items: center;
+      gap: 10px;
     }
 
     .badge {
       display: inline-block;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 6px;
-      margin-left: 6px;
+      padding: 2px 7px;
+      border-radius: 5px;
+      margin-left: 0;
       vertical-align: middle;
     }
 
@@ -635,25 +671,43 @@
 
     .money {
       font-weight: 800;
-      font-size: 17px;
-      color: var(--primary)
+      font-size: 15px;
+      color: var(--primary);
+      white-space: nowrap;
     }
 
     .muted {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--muted);
-      margin-top: 4px
+      margin-top: 2px
     }
 
     .actions {
       display: flex;
-      gap: 8px;
-      margin-top: 10px
+      gap: 4px;
+      margin-top: 0
     }
 
     .actions button {
-      font-size: 12px;
-      padding: 7px 11px
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 520px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 12px;
+      }
+      .item-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
 
     .empty {
@@ -976,6 +1030,20 @@
       box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
       max-height: 90vh;
       overflow-y: auto;
+    }
+    #settings-products-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 14px;
+      max-height: 65vh;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    @media (max-width: 660px) {
+      #settings-products-list {
+        grid-template-columns: 1fr !important;
+      }
     }
     .sync-btn {
       background: #0284c7;
@@ -1327,23 +1395,19 @@
     </div>
   </div>
 
-  <!-- PRODUCT NAMES & PRICES SETTINGS MODAL -->
+  <!-- PRODUCT NAMES, PRICES & BACKGROUND COLOR SETTINGS MODAL -->
   <div id="product-settings-modal" class="modal-overlay" style="display:none">
-    <div class="modal-box" style="max-width:540px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+    <div class="modal-box" style="max-width:760px;width:95%">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
         <h3 style="margin:0;font-size:18px;display:flex;align-items:center;gap:8px">
-          ⚙️ Product Names &amp; Price Settings
+          ⚙️ Product Names, Prices &amp; Themes
         </h3>
         <button type="button" class="secondary" onclick="closeProductSettings()" style="padding:4px 9px;font-size:14px">✕</button>
       </div>
 
-      <p style="font-size:13px;color:var(--muted);margin:0 0 16px;line-height:1.5">
-        Customize product names and prices (₹) for the Fast Punch counter pad. Changes update your counter buttons and calculations instantly and save offline.
-      </p>
-
       <form id="product-settings-form" onsubmit="saveProductSettings(event)">
-        <div id="settings-products-list" style="display:flex;flex-direction:column;gap:12px;margin-bottom:14px;max-height:55vh;overflow-y:auto;padding-right:4px">
-          <!-- Dynamically populated by renderSettingsModalList() -->
+        <div id="settings-products-list">
+          <!-- Dynamically populated by renderSettingsModalList() (2 in each row) -->
         </div>
 
         <button type="button" class="secondary" onclick="addNewProductInSettings()" style="width:100%;border:2px dashed #c7d2fe;background:#f8fafc;padding:11px 14px;border-radius:10px;font-weight:700;color:var(--primary);margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;cursor:pointer">
@@ -2431,7 +2495,9 @@
       { theme: "coral", emoji: "🍑", name: "Coral", color: "#ea580c", bg: "#fff7ed", border: "#fed7aa" },
       { theme: "indigo", emoji: "🍇", name: "Indigo", color: "#4f46e5", bg: "#eef2ff", border: "#c7d2fe" },
       { theme: "pink", emoji: "🍉", name: "Pink", color: "#db2777", bg: "#fdf2f8", border: "#fbcfe8" },
-      { theme: "teal", emoji: "🍃", name: "Teal", color: "#0d9488", bg: "#f0fdfa", border: "#99f6e4" }
+      { theme: "teal", emoji: "🍃", name: "Teal", color: "#0d9488", bg: "#f0fdfa", border: "#99f6e4" },
+      { theme: "gold", emoji: "🍋", name: "Gold", color: "#ca8a04", bg: "#fefce8", border: "#fef08a" },
+      { theme: "slate", emoji: "☕", name: "Slate", color: "#475569", bg: "#f8fafc", border: "#cbd5e1" }
     ];
 
     const DEFAULT_PRODUCTS = [
@@ -2444,16 +2510,114 @@
     let productsCatalog = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
     let settingsDraft = [];
 
+    function hexToRgb(hex) {
+      if (!hex || typeof hex !== "string") return { r: 124, g: 58, b: 237 };
+      let c = hex.replace("#", "").trim();
+      if (c.length === 3) c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
+      const num = parseInt(c, 16);
+      if (isNaN(num)) return { r: 124, g: 58, b: 237 };
+      return {
+        r: (num >> 16) & 255,
+        g: (num >> 8) & 255,
+        b: num & 255
+      };
+    }
+
+    function hexToRgba(hex, alpha) {
+      const { r, g, b } = hexToRgb(hex);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function adjustBrightness(hex, percent) {
+      const { r, g, b } = hexToRgb(hex);
+      const factor = 1 + percent / 100;
+      const newR = Math.min(255, Math.max(0, Math.round(r * factor)));
+      const newG = Math.min(255, Math.max(0, Math.round(g * factor)));
+      const newB = Math.min(255, Math.max(0, Math.round(b * factor)));
+      const toHex = n => n.toString(16).padStart(2, "0");
+      return `#${toHex(newR)}${toHex(newG)}${toHex(newB)}`;
+    }
+
+    function getLuminance(hex) {
+      const { r, g, b } = hexToRgb(hex);
+      return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+    }
+
+    function resolveProductTheme(p, idx = 0) {
+      if (p && p.customColor) {
+        const hex = p.customColor;
+        const lum = getLuminance(hex);
+        let color, bg, border, colorDark;
+
+        if (lum > 0.72) {
+          // Soft pastel background
+          bg = hex;
+          border = adjustBrightness(hex, -22);
+          color = adjustBrightness(hex, -55);
+          colorDark = adjustBrightness(hex, -70);
+        } else {
+          // Vivid theme color
+          color = hex;
+          colorDark = adjustBrightness(hex, -20);
+          bg = hexToRgba(hex, 0.08);
+          border = hexToRgba(hex, 0.28);
+        }
+
+        return {
+          theme: "custom",
+          name: "Custom",
+          emoji: p.emoji || "✨",
+          color: color,
+          colorDark: colorDark,
+          bg: bg,
+          border: border,
+          pillBg: hexToRgba(color, 0.12),
+          pillBorder: border,
+          btnBg: hexToRgba(color, 0.12),
+          btnText: color,
+          btnHover: hexToRgba(color, 0.22),
+          shadow: hexToRgba(color, 0.22),
+          isCustom: true
+        };
+      }
+
+      const match = THEMES.find(t => t.theme === (p ? p.theme : "")) || THEMES[idx % THEMES.length];
+      return {
+        ...match,
+        colorDark: match.color,
+        pillBg: hexToRgba(match.color, 0.12),
+        pillBorder: match.border,
+        btnBg: hexToRgba(match.color, 0.12),
+        btnText: match.color,
+        btnHover: hexToRgba(match.color, 0.22),
+        shadow: hexToRgba(match.color, 0.22),
+        isCustom: false
+      };
+    }
+
     function renderProductCards() {
       const grid = $("quick-grid");
       if (!grid) return;
       grid.innerHTML = productsCatalog.map((p, idx) => {
         const qty = quickQuantities[p.id] || 0;
         const hasQty = qty > 0 ? "has-qty" : "";
-        const theme = p.theme || THEMES[idx % THEMES.length].theme;
-        const emoji = p.emoji || THEMES[idx % THEMES.length].emoji;
+        const th = resolveProductTheme(p, idx);
+        const emoji = p.emoji || th.emoji;
+        const styleVars = [
+          `--card-theme: ${th.color}`,
+          `--card-theme-dark: ${th.colorDark}`,
+          `--card-bg: ${th.bg}`,
+          `--card-border: ${th.border}`,
+          `--card-pill-bg: ${th.pillBg}`,
+          `--card-pill-border: ${th.pillBorder}`,
+          `--card-btn-bg: ${th.btnBg}`,
+          `--card-btn-text: ${th.btnText}`,
+          `--card-btn-hover: ${th.btnHover}`,
+          `--card-shadow: ${th.shadow}`
+        ].join("; ");
+
         return `
-          <div class="product-card ${hasQty}" data-flavor="${p.id}" data-theme="${theme}" data-name="${safe(p.name)}" data-price="${p.price}">
+          <div class="product-card ${hasQty}" data-flavor="${p.id}" data-theme="${th.theme}" data-name="${safe(p.name)}" data-price="${p.price}" style="${styleVars}">
             <div class="product-info">
               <div class="product-name">${emoji} ${idx + 1}. ${safe(p.name)}</div>
               <div class="product-price">₹${p.price}</div>
@@ -2474,8 +2638,48 @@
         const nameInp = $("setting-name-" + p.id);
         const priceInp = $("setting-price-" + p.id);
         if (nameInp && nameInp.value.trim()) p.name = nameInp.value.trim();
-        if (priceInp && !isNaN(priceInp.value)) p.price = Math.max(0, Number(priceInp.value));
+        if (priceInp && priceInp.value !== "" && !isNaN(priceInp.value)) p.price = Math.max(0, Number(priceInp.value));
       }
+    }
+
+    function updateSettingsCardVisuals(id) {
+      const p = settingsDraft.find(item => item.id === id);
+      if (!p) return;
+      const idx = settingsDraft.indexOf(p);
+      const th = resolveProductTheme(p, idx);
+      const cardEl = $("setting-card-" + id);
+      if (!cardEl) {
+        renderSettingsModalList();
+        return;
+      }
+
+      cardEl.style.background = th.bg;
+      cardEl.style.borderColor = th.border;
+      cardEl.style.borderLeftColor = th.color;
+
+      const headerEl = $("setting-header-" + id);
+      if (headerEl) {
+        headerEl.style.color = th.color;
+        headerEl.innerHTML = `${p.emoji || th.emoji} ITEM ${idx + 1}`;
+      }
+
+      const colorDot = $("color-dot-" + id);
+      if (colorDot) {
+        colorDot.style.background = th.color;
+        colorDot.style.boxShadow = `0 0 0 1.5px ${th.border}, 0 2px 4px rgba(0,0,0,0.18)`;
+        const inp = colorDot.querySelector("input[type='color']");
+        if (inp) inp.value = p.customColor || th.color;
+      }
+
+      const nameLbl = $("setting-name-lbl-" + id);
+      if (nameLbl) nameLbl.style.color = th.color;
+      const priceLbl = $("setting-price-lbl-" + id);
+      if (priceLbl) priceLbl.style.color = th.color;
+
+      const nameInp = $("setting-name-" + id);
+      if (nameInp) nameInp.style.borderColor = th.border;
+      const priceInp = $("setting-price-" + id);
+      if (priceInp) priceInp.style.borderColor = th.border;
     }
 
     function renderSettingsModalList() {
@@ -2483,13 +2687,23 @@
       if (!container) return;
 
       container.innerHTML = settingsDraft.map((p, idx) => {
-        const themeObj = THEMES.find(t => t.theme === p.theme) || THEMES[idx % THEMES.length];
+        const th = resolveProductTheme(p, idx);
         const canDelete = settingsDraft.length > 1;
+
         return `
-          <div style="background:${themeObj.bg};border:1px solid ${themeObj.border};border-left:5px solid ${themeObj.color};border-radius:10px;padding:10px 12px;position:relative">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-              <div style="font-size:12px;font-weight:700;color:${themeObj.color};letter-spacing:0.5px">
-                ${p.emoji || themeObj.emoji} ITEM ${idx + 1} (${themeObj.name.toUpperCase()})
+          <div id="setting-card-${p.id}" style="background:${th.bg};border:1px solid ${th.border};border-left:5px solid ${th.color};border-radius:12px;padding:12px 14px;position:relative;transition:background 0.15s, border-color 0.15s">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <div style="display:flex;align-items:center;gap:8px">
+                <span id="setting-header-${p.id}" style="font-size:12px;font-weight:700;color:${th.color};letter-spacing:0.5px">
+                  ${p.emoji || th.emoji} ITEM ${idx + 1}
+                </span>
+                <!-- Minimal single color selector dot -->
+                <label id="color-dot-${p.id}" title="Tap to change card color" style="position:relative;width:20px;height:20px;border-radius:50%;background:${th.color};border:2px solid #fff;box-shadow:0 0 0 1.5px ${th.border}, 0 2px 4px rgba(0,0,0,0.18);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;transition:transform 0.1s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                  <input type="color" value="${p.customColor || th.color}"
+                    oninput="setProductCustomColor('${p.id}', this.value)"
+                    onchange="setProductCustomColor('${p.id}', this.value)"
+                    style="position:absolute;top:-10px;left:-10px;width:50px;height:50px;opacity:0;cursor:pointer">
+                </label>
               </div>
               ${canDelete ? `
                 <button type="button" onclick="removeProductFromSettings('${p.id}')" title="Delete this product" style="border:0;background:transparent;color:#ef4444;cursor:pointer;font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px" onmouseover="this.style.background='#fee2e2'" onmouseout="this.style.background='transparent'">
@@ -2497,20 +2711,43 @@
                 </button>
               ` : ''}
             </div>
-            <div style="display:grid;grid-template-columns:1fr 110px;gap:10px;align-items:center">
+
+            <div style="display:grid;grid-template-columns:1fr 95px;gap:8px;align-items:center">
               <div>
-                <label style="font-size:11px;color:${themeObj.color};margin-bottom:3px;font-weight:600">Product Name</label>
-                <input type="text" id="setting-name-${p.id}" required value="${safe(p.name)}" placeholder="Product Name" style="background:#fff">
+                <label id="setting-name-lbl-${p.id}" style="font-size:11px;color:${th.color};margin-bottom:3px;font-weight:600;display:block">Product Name</label>
+                <input type="text" id="setting-name-${p.id}" required value="${safe(p.name)}" placeholder="Product Name" style="background:#fff;border-color:${th.border};padding:8px 10px;font-size:13px">
               </div>
               <div>
-                <label style="font-size:11px;color:${themeObj.color};margin-bottom:3px;font-weight:600">Price (₹)</label>
-                <input type="number" id="setting-price-${p.id}" min="0" step="1" required value="${p.price}" placeholder="0" style="background:#fff">
+                <label id="setting-price-lbl-${p.id}" style="font-size:11px;color:${th.color};margin-bottom:3px;font-weight:600;display:block">Price (₹)</label>
+                <input type="number" id="setting-price-${p.id}" min="0" step="1" required value="${p.price}" placeholder="0" style="background:#fff;border-color:${th.border};padding:8px 10px;font-size:13px">
               </div>
             </div>
           </div>
         `;
       }).join("");
     }
+
+    window.setProductTheme = function(id, themeName) {
+      syncSettingsInputsToDraft();
+      const p = settingsDraft.find(item => item.id === id);
+      if (p) {
+        p.theme = themeName;
+        delete p.customColor;
+        const matched = THEMES.find(t => t.theme === themeName);
+        if (matched) p.emoji = matched.emoji;
+        updateSettingsCardVisuals(id);
+      }
+    };
+
+    window.setProductCustomColor = function(id, hex) {
+      syncSettingsInputsToDraft();
+      const p = settingsDraft.find(item => item.id === id);
+      if (p) {
+        p.theme = "custom";
+        p.customColor = hex;
+        updateSettingsCardVisuals(id);
+      }
+    };
 
     window.openProductSettings = function() {
       settingsDraft = JSON.parse(JSON.stringify(productsCatalog));
@@ -2799,23 +3036,28 @@
     function renderItemHtml(r) {
       const syncBadge = r.synced 
         ? `<span class="badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0" title="Synced to Google Drive Sheet">☁️ Synced</span>`
-        : `<span class="badge" style="background:#fffbeb;color:#b45309;border:1px solid #fde68a" title="Newly entered · Pending Google Sheet sync">⏳ Pending sync</span>`;
+        : `<span class="badge" style="background:#fffbeb;color:#b45309;border:1px solid #fde68a" title="Newly entered · Pending Google Sheet sync">⏳ Pending</span>`;
 
       return `
         <div class="item">
-          <div class="itemtop">
-            <div>
-              <b>${safe(r.product || "Sale")}</b>
+          <div style="min-width:0;flex:1">
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+              <b style="font-size:13.5px;color:#0f172a">${safe(r.product || "Sale")}</b>
               <span class="badge ${r.payment === 'Online' ? 'badge-online' : 'badge-cash'}">${safe(r.payment || 'Cash')}</span>
               ${syncBadge}
-              <div class="muted">${safe(r.date)}${r.customer ? ` · ${safe(r.customer)}` : ''}</div>
             </div>
-            <div class="money">${money(r.amount)}</div>
+            <div class="muted" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+              <span>${safe(r.date)}</span>
+              ${r.customer ? `<span style="color:#475569">· 👤 ${safe(r.customer)}</span>` : ''}
+              ${r.notes ? `<span style="color:#94a3b8">· ${safe(r.notes)}</span>` : ''}
+            </div>
           </div>
-          ${r.notes ? `<div class="muted" style="margin-top:6px">${safe(r.notes)}</div>` : ""}
-          <div class="actions">
-            <button class="secondary" onclick="editRecord('${r.id}')">Edit</button>
-            <button class="danger" onclick="deleteRecord('${r.id}')">Delete</button>
+          <div class="item-right" style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+            <div class="money">${money(r.amount)}</div>
+            <div class="actions">
+              <button type="button" class="secondary" onclick="editRecord('${r.id}')" title="Edit sale">Edit</button>
+              <button type="button" class="danger" onclick="deleteRecord('${r.id}')" title="Delete sale">Delete</button>
+            </div>
           </div>
         </div>
       `;
@@ -3478,15 +3720,18 @@
 
       // 3. Smart Merge with sales_data.json / INITIAL
       let seedData = INITIAL;
-      try {
-        const res = await fetch("sales_data.json");
-        if (res.ok) {
-          const jsonArr = await res.json();
-          if (Array.isArray(jsonArr) && jsonArr.length > 0) {
-            seedData = jsonArr;
+      // When opened as a local file:/// in browser, skip fetch to avoid CORS console warning
+      if (window.location.protocol !== "file:") {
+        try {
+          const res = await fetch("sales_data.json");
+          if (res.ok) {
+            const jsonArr = await res.json();
+            if (Array.isArray(jsonArr) && jsonArr.length > 0) {
+              seedData = jsonArr;
+            }
           }
-        }
-      } catch(e) {}
+        } catch(e) {}
+      }
 
       if (stored.length === 0) {
         stored = seedData;
